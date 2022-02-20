@@ -6,3 +6,5 @@ const kTextLightColor = Color(0xFFACACAC);
 const kDefaultPadding = 20.0;
 
 const kBorderRadiusMain = 24.0;
+
+const kIconSize = 24.0;

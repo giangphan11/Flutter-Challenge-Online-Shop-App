@@ -66,6 +66,16 @@ List<Product> products = [
     image: "assets/images/bag_6.png",
     color: Color(0xFFAEAEAE),
   ),
+
+  Product(
+    id: 7,
+    title: "Black cap",
+    price: 11222,
+    size: 12,
+    description: dummyText,
+    image: "assets/images/cap1.jpg",
+    color: Color(0xFF2B303C),
+  ),
 ];
 
 String dummyText =
