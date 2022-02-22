@@ -5,6 +5,7 @@ import 'package:onlineshop/models/Product.dart';
 import 'package:onlineshop/constants.dart';
 import 'add_to_cart.dart';
 import 'color_and_size.dart';
+import 'color_and_size2.dart';
 import 'counter_with_favorite_button.dart';
 import 'desciption.dart';
 import 'product_title_with_image.dart';
@@ -49,7 +50,7 @@ Container buildContainer(BuildContext context, Size size, Product? product){
     ),
     child: Column(
       children: [
-        ColorAndSize(product: product,),
+        ColorAndSize2(product: product,),
         const SizedBox(height: kDefaultPadding/2,),
         DetailsDescription(product: product,),
         const CounterWithFavoriteButton(),

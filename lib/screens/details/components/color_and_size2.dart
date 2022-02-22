@@ -1,20 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:onlineshop/models/Product.dart';
-import 'dot_widget.dart';
 import 'package:onlineshop/constants.dart';
 
-class ColorAndSize extends StatefulWidget {
+import 'dot_widget.dart';
+
+class ColorAndSize2 extends StatefulWidget {
   final Product? product;
-  const ColorAndSize({
-    Key? key,
-    this.product,
-  }) : super(key: key);
+
+  const ColorAndSize2({Key? key, this.product}) : super(key: key);
 
   @override
-  State<ColorAndSize> createState() => _ColorAndSizeState();
+  _ColorAndSize2State createState() => _ColorAndSize2State();
 }
 
-class _ColorAndSizeState extends State<ColorAndSize> {
+class _ColorAndSize2State extends State<ColorAndSize2> {
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -30,16 +29,16 @@ class _ColorAndSizeState extends State<ColorAndSize> {
                 width: 100,
                 height: 35,
                 child: ListView.builder(
-                  itemCount: widget.product!.listDetailColor!.length,
-                  physics: const BouncingScrollPhysics(),
-                  scrollDirection: Axis.horizontal,
-                  itemBuilder: (context, index) => GestureDetector(
-                    onTap: (){
-                      // setState(() {
-                      //   widget.product!.listDetailColor![index].isSelected = !widget.product!.listDetailColor![index].isSelected;
-                      // });
-                    },
-                    child: ColorDot(color: widget.product!.listDetailColor![index].color,isSelected: widget.product!.listDetailColor![index].isSelected,))),
+                    itemCount: widget.product!.listDetailColor!.length,
+                    physics: const BouncingScrollPhysics(),
+                    scrollDirection: Axis.horizontal,
+                    itemBuilder: (context, index) => GestureDetector(
+                        onTap: (){
+                          // setState(() {
+                          //   widget.product!.listDetailColor![index].isSelected = !widget.product!.listDetailColor![index].isSelected;
+                          // });
+                        },
+                        child: ColorDot(color: widget.product!.listDetailColor![index].color,isSelected: widget.product!.listDetailColor![index].isSelected,))),
               )
               // SizedBox(
               //   width: 60,
